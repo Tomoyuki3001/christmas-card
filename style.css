@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Amiri&family=Dancing+Script:wght@500&family=Noto+Sans+JP:wght@300;400;500;600&family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("bg-image.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Amiri", serif;
+  color: rgb(211, 211, 211);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.front {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 3em;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("front-image.jpg");
+}
+
+.container {
+  text-align: center;
+  width: 350px;
+  height: 500px;
+  perspective: 800px;
+  margin: 10% 0 20% 0;
+}
+
+.container-header {
+  font-size: 1.5em;
+  margin-bottom: 10%;
+}
+
+.container:hover > .card {
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+}
+
+.front,
+.back {
+  height: 100%;
+  width: 100%;
+  border-radius: 2rem;
+  box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.back {
+  background-color: #3a3a3a;
+  transform: rotateY(180deg);
+  gap: 5rem;
+  padding: 5% 10%;
+  text-align: left;
+}
+
+.back-h3 {
+  text-align: right;
+}
