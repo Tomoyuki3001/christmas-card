@@ -8,7 +8,7 @@
 
 body {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("bg-image.jpg");
+    url("./Images/bg-image.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: "Amiri", serif;
@@ -28,7 +28,7 @@ body {
   font-weight: bold;
   font-size: 3em;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("front-image.jpg");
+    url("./Images/front-image.jpg");
 }
 
 .container {
