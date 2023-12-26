@@ -1,0 +1,16 @@
+.bottom {
+  text-align: center;
+  margin: 10% 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .bottom {
+    text-align: center;
+    margin: 10% 0;
+    padding: 0% 10%;
+  }
+
+  .bottom-h1 {
+    font-size: 1.5em;
+  }
+}

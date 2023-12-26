@@ -8,7 +8,7 @@
 
 body {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("./Images/bg-image.jpg");
+    url("../Images/bg-image.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: "Amiri", serif;
@@ -28,7 +28,7 @@ body {
   font-weight: bold;
   font-size: 3em;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("./Images/front-image.jpg");
+    url("../Images/front-image.jpg");
 }
 
 .container {
@@ -77,4 +77,46 @@ body {
 
 .back-h3 {
   text-align: right;
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    text-align: center;
+    width: 350px;
+    height: 500px;
+    perspective: 800px;
+    margin: 10% 0 20% 0;
+    padding: 0% 10%;
+  }
+
+  .container-header {
+    font-size: 1em;
+    margin-bottom: 10%;
+  }
+
+  .card {
+    height: 80%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+  }
+
+  .back {
+    background-color: #3a3a3a;
+    transform: rotateY(180deg);
+    gap: 5rem;
+    padding: 5% 15%;
+    text-align: left;
+    font-size: 0.8em;
+  }
+
+  .back-h2 {
+    font-size: 1em;
+  }
+
+  .back-h3 {
+    text-align: right;
+    font-size: 0.9em;
+  }
 }
